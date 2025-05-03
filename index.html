@@ -6,33 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleanregard Website</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-        body {
-            font-family: "DM Sans", sans-serif;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        .marquee-wrapper {
-            display: inline-block;
-            white-space: nowrap;
-        }
-
-        .marquee-slide {
-            display: inline-block;
-            margin: 0 2rem;
-        }
-    </style>
+<link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="bg-[#0D0D0D] text-white">
@@ -309,7 +283,6 @@
             </div>
         </div>
     </section>
-
     <!-- Statics section -->
     <section class="px-4 py-6 md:px-[120px] md:py-[66px] min-h-[227px] mt-[60px] md:m-[100px">
         <div class="container flex flex-col md:flex-row gap-8">
@@ -428,8 +401,8 @@ height: 208px;"></div>
             <p class="text-sm md:text-base text-[#3E68FF]">Success Stories</p>
             <h1 class="text-[32px] md:text-5xl font-semibold md:font-bold">Transform Challenges Into Opportunities </h1>
         </div>
-        <div class="flex flex-col md:flex-row gap-6 mt-12">
-            <div class="p-4 md:p-8 rounded-[20px] bg-[#ffffff0a] w-full md:w-[588px] space-y-4 md:space-y-6">
+        <div id="case-study-wrapper" class="flex flex-col md:flex-row gap-6 mt-12">
+            <div class="case-card p-4 md:p-8 rounded-[20px] bg-[#ffffff0a] w-full md:w-[588px] space-y-4 md:space-y-6">
                 <div class="flex justify-between items-start">
                     <div
                         class="flex justify-center items-center px-[18px] py-3 rounded-full bg-[#3E68FF] text-2xl font-medium">
@@ -448,16 +421,73 @@ height: 208px;"></div>
                             revenue/month</span></p>
                 </div>
             </div>
-            <div class="p-4 md:p-8 rounded-[20px] bg-[#ffffff0a] w-full md:w-[588px] space-y-4 md:space-y-6">
+            <div class="case-card p-4 md:p-8 rounded-[20px] bg-[#ffffff0a] w-full md:w-[588px] space-y-4 md:space-y-6">
                 <div class="flex justify-between items-start">
                     <div
                         class="flex justify-center items-center px-[18px] py-3 rounded-full bg-[#3E68FF] text-2xl font-medium">
-                        01
+                        02
                     </div>
                     <img src="./assets/profile1.png" alt="">
                 </div>
                 <div>
-                    <h1 class="text-[22px] md:text-[32px] font-semibold mb-1">Case Study 1 (E-commerce)</h1>
+                    <h1 class="text-[22px] md:text-[32px] font-semibold mb-1">Case Study 2 (SaaS)</h1>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Problem: <span
+                            class="text-[#BBC0C1]">Wasted 30 hrs/week on manual orders</span></p>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Solution: <span
+                            class="text-[#BBC0C1]">Automated inventory + CRM</span></p>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Results: <span
+                            class="text-[#BBC0C1]">50% fewer errors, $2K+ added
+                            revenue/month</span></p>
+                </div>
+            </div>
+            <div class="case-card p-4 md:p-8 rounded-[20px] bg-[#ffffff0a] w-full md:w-[588px] space-y-4 md:space-y-6">
+                <div class="flex justify-between items-start">
+                    <div
+                        class="flex justify-center items-center px-[18px] py-3 rounded-full bg-[#3E68FF] text-2xl font-medium">
+                        03
+                    </div>
+                    <img src="./assets/profile1.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-[22px] md:text-[32px] font-semibold mb-1">Case Study 3 Demo</h1>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Problem: <span
+                            class="text-[#BBC0C1]">Wasted 30 hrs/week on manual orders</span></p>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Solution: <span
+                            class="text-[#BBC0C1]">Automated inventory + CRM</span></p>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Results: <span
+                            class="text-[#BBC0C1]">50% fewer errors, $2K+ added
+                            revenue/month</span></p>
+                </div>
+            </div>
+            <div class="case-card p-4 md:p-8 rounded-[20px] bg-[#ffffff0a] w-full md:w-[588px] space-y-4 md:space-y-6">
+                <div class="flex justify-between items-start">
+                    <div
+                        class="flex justify-center items-center px-[18px] py-3 rounded-full bg-[#3E68FF] text-2xl font-medium">
+                        04
+                    </div>
+                    <img src="./assets/profile1.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-[22px] md:text-[32px] font-semibold mb-1">Case Study 4</h1>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Problem: <span
+                            class="text-[#BBC0C1]">Wasted 30 hrs/week on manual orders</span></p>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Solution: <span
+                            class="text-[#BBC0C1]">Automated inventory + CRM</span></p>
+                    <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Results: <span
+                            class="text-[#BBC0C1]">50% fewer errors, $2K+ added
+                            revenue/month</span></p>
+                </div>
+            </div>
+            <div class="case-card p-4 md:p-8 rounded-[20px] bg-[#ffffff0a] w-full md:w-[588px] space-y-4 md:space-y-6">
+                <div class="flex justify-between items-start">
+                    <div
+                        class="flex justify-center items-center px-[18px] py-3 rounded-full bg-[#3E68FF] text-2xl font-medium">
+                        05
+                    </div>
+                    <img src="./assets/profile1.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-[22px] md:text-[32px] font-semibold mb-1">Case Study 5</h1>
                     <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Problem: <span
                             class="text-[#BBC0C1]">Wasted 30 hrs/week on manual orders</span></p>
                     <p class="text-base md:text-lg font-medium leading-[30px] opacity-70">Solution: <span
@@ -468,8 +498,13 @@ height: 208px;"></div>
                 </div>
             </div>
         </div>
-        <button class="p-[10px] bg-[#3E68FF] rounded-full absolute -right-5 top-[65%] cursor-pointer hidden md:block">
+        <button id="next-card-btn"
+            class="p-[10px] bg-[#3E68FF] rounded-full absolute -right-5 top-[65%] cursor-pointer hidden md:block">
             <img src="./assets/arrowRight.png" alt="">
+        </button>
+        <button
+        id="see-more-card-btn"
+            class="px-8 block md:hidden w-fit mx-auto py-4 border text-[#E3E2DA] border-[#2A4B7D] rounded-2xl text-base font-semibold cursor-pointer">See More
         </button>
     </section>
     <!-- Why you vs others section -->
@@ -662,7 +697,8 @@ height: 208px;"></div>
                 </div>
             </div>
             <!-- Chatbot part -->
-            <button id="chatbot-btn" class="siz-[120px] rounded-[200px] bg-[#3E68FF] absolute -right-2 bottom-0 cursor-pointer">
+            <button id="chatbot-btn"
+                class="siz-[120px] rounded-[200px] bg-[#3E68FF] absolute -right-2 -bottom-5 cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                     <path
                         d="M51.9139 20.2242H20.087C15.9385 20.2242 12.5769 23.5865 12.5769 27.7343V49.0446C12.5769 53.1923 15.9385 56.5547 20.087 56.5547H25.8181V64.3692C25.8181 64.4184 25.8737 64.4472 25.9138 64.4184L37.6468 56.6404L40.5894 56.5856H48.8455L51.9139 56.5547C56.0617 56.5547 59.424 53.1923 59.424 49.0446V27.7343C59.424 23.5865 56.0617 20.2242 51.9139 20.2242ZM24.7276 31.5136C24.7276 29.4379 26.4102 27.7546 28.4865 27.7546C30.5621 27.7546 32.2447 29.4379 32.2447 31.5136C32.2447 33.5899 30.5621 35.2725 28.4865 35.2725C26.4102 35.2725 24.7276 33.5899 24.7276 31.5136ZM35.8271 50.2968C31.0621 50.2968 27.126 46.9577 26.5241 42.6328H45.1309C44.5283 46.9577 40.5929 50.2968 35.8271 50.2968ZM43.5615 35.2725C41.4859 35.2725 39.8026 33.5899 39.8026 31.5136C39.8026 29.4379 41.4859 27.7546 43.5615 27.7546C45.6378 27.7546 47.3204 29.4379 47.3204 31.5136C47.3204 33.5899 45.6378 35.2725 43.5615 35.2725ZM60.9758 45.3124V31.8602H62.8377C64.201 31.8602 65.3063 32.9655 65.3063 34.3289V42.8444C65.3063 44.2078 64.201 45.3131 62.8377 45.3131H60.9758V45.3124ZM6.69385 42.8444V34.3289C6.69385 32.9655 7.79916 31.8602 9.16252 31.8602H11.0244V45.3131H9.16252C7.79916 45.3124 6.69385 44.2071 6.69385 42.8444ZM39.4792 10.5175C39.4792 12.165 38.383 13.5607 36.8818 14.0142V17.1705H34.7724V14.0142C33.2713 13.5607 32.1751 12.165 32.1751 10.5175C32.1751 8.50449 33.8134 6.86621 35.8271 6.86621C37.8409 6.86621 39.4792 8.50449 39.4792 10.5175Z"
@@ -670,7 +706,8 @@ height: 208px;"></div>
                 </svg>
             </button>
         </div>
-        <div id="chatbot-box" class="flex-col w-[340px] md:w-[508px] h-[518px] md:h-[744px] hidden fixed bottom-0 right-0">
+        <div id="chatbot-box"
+            class="flex-col w-[340px] md:w-[508px] h-[518px] md:h-[744px] hidden fixed bottom-0 right-0">
             <!-- Header -->
             <div class="bg-[#3E68FF] p-4 flex items-center justify-between rounded-t-lg">
                 <div class="flex items-center gap-2">
@@ -700,7 +737,8 @@ height: 208px;"></div>
                     <!-- User Message -->
                     <div class=" flex items-start justify-end gap-4">
                         <p class="px-4 py-[14px] rounded-[16px] bg-[#DCE3FB] text-[#232C3C] text-left">Get Started</p>
-                        <div class="size-10 md:size-12 bg-[#6C906C] rounded-full flex items-center justify-center text-xs md:text-sm">
+                        <div
+                            class="size-10 md:size-12 bg-[#6C906C] rounded-full flex items-center justify-center text-xs md:text-sm">
                             Me
                         </div>
                     </div>
@@ -724,8 +762,10 @@ height: 208px;"></div>
                     </div>
                     <!-- User Message -->
                     <div class=" flex items-start justify-end gap-4">
-                        <p class="flex-1 px-4 py-[14px] rounded-[16px] bg-[#DCE3FB] text-[#232C3C] text-left">Yes Certainly, I will give you proper guideline about it.</p>
-                        <div class="size-10 md:size-12 bg-[#6C906C] rounded-full flex items-center justify-center text-xs md:text-sm">
+                        <p class="flex-1 px-4 py-[14px] rounded-[16px] bg-[#DCE3FB] text-[#232C3C] text-left">Yes
+                            Certainly, I will give you proper guideline about it.</p>
+                        <div
+                            class="size-10 md:size-12 bg-[#6C906C] rounded-full flex items-center justify-center text-xs md:text-sm">
                             Me
                         </div>
                     </div>

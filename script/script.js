@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Faq toggle functionality
     const toggles = document.querySelectorAll('.faq-toggle');
-
     toggles.forEach((toggle, i) => {
         toggle.addEventListener('click', () => {
             toggles.forEach((otherToggle, j) => {
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
-
+    // Trusted companies slider
     const marquee = {
         wrapper: document.querySelector('.marquee-wrapper'),
         slides: document.querySelectorAll('.marquee-slide'),
@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
             this.animate();
         }
     };
-
     // Initialize marquee
     marquee.init();
     // Handle resize
@@ -84,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu.classList.toggle('hidden');
     }
 
+
+    // Chatbot functionality
     const chatbotBtn = document.getElementById('chatbot-btn');
     const chatbotBox = document.getElementById('chatbot-box');
     const closeBtn = document.getElementById('close-chatbot');
@@ -95,5 +96,44 @@ document.addEventListener('DOMContentLoaded', function () {
 
     closeBtn.addEventListener('click', () => {
         chatbotBox.classList.add('hidden');
+    });
+
+    // Transform challenge card functionality
+    const cards = document.querySelectorAll('.case-card');
+    const wrapper = document.getElementById('case-study-wrapper');
+    const nextBtn = document.getElementById('next-card-btn');
+    const seeMore = document.getElementById('see-more-card-btn');
+
+    let startIndex = 0;
+
+    function renderCards() {
+        cards.forEach((card, index) => {
+            if (index >= startIndex && index < startIndex + 2) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
+
+    // Initial render
+    renderCards();
+    nextBtn.addEventListener('click', () => {
+        if (startIndex + 2 < cards.length) {
+            startIndex++;
+            renderCards();
+        } else {
+            // Optional: Loop back to start
+            startIndex = 0;
+            renderCards();
+        }
+    });
+    seeMore.addEventListener('click', () => {
+        // Show all cards from current index
+        cards.forEach((card, index) => {
+            card.classList.remove('hidden');
+        });
+        // Hide the "See More" button
+        seeMore.classList.add('hidden');
     });
 });
