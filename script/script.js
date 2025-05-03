@@ -78,11 +78,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // menu toggle
-    const toggleMenu = () => {
+    const menuBtn = document.getElementById('menuToggle');
+    menuBtn.addEventListener('click', () => {
         const mobileMenu = document.getElementById('mobileMenu');
         mobileMenu.classList.toggle('hidden');
-    }
-
+    });
 
     // Chatbot functionality
     const chatbotBtn = document.getElementById('chatbot-btn');
