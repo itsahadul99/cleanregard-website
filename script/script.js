@@ -88,10 +88,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const chatbotBtn = document.getElementById('chatbot-btn');
     const chatbotBox = document.getElementById('chatbot-box');
     const closeBtn = document.getElementById('close-chatbot');
-
-    chatbotBtn.addEventListener('click', () => {
+    const accessBox = document.getElementById('access-box');
+    const accessBtn = document.getElementById('access-btn');
+    accessBtn.addEventListener('click', () => {
+        accessBox.classList.add('hidden');
         chatbotBox.classList.remove('hidden');
         chatbotBox.classList.add('flex');
+    })
+    chatbotBtn.addEventListener('click', () => {
+        accessBox.classList.remove('hidden');
     });
 
     closeBtn.addEventListener('click', () => {
