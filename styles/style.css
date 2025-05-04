@@ -1,29 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 body {
-    font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .marquee-container {
-    overflow: hidden;
-    white-space: nowrap;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .marquee-wrapper {
-    display: inline-block;
-    white-space: nowrap;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .marquee-slide {
-    display: inline-block;
-    margin: 0 2rem;
+  display: inline-block;
+  margin: 0 2rem;
 }
 
 .case-card-wrapper {
-    overflow: hidden;
+  overflow: hidden;
+}
+
+/* timeline  */
+.timeline-section {
+  padding: 100px 150px 0 150px;
+}
+.timeline-section-wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.timeline-section-wrapper .timeline-section-heading p {
+  color: #b3b3b3;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.timeline-section-wrapper .timeline-section-heading h1 {
+  color: #e0dfd8;
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+}
+
+.timeline-card-right > div {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(4px);
+  width: 512px;
+  max-width: 512px;
+  padding: 20px 24px;
+}
+
+@media (max-width: 431px) {
+  .timeline-section {
+    padding: 60px 16px 0 16px;
+  }
+  .timeline-section-wrapper .timeline-section-heading h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 50px; /* 156.25% */
+  }
+
+  .timeline-section-wrapper .timeline-section-heading p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 168.75% */
+  }
+
+  .timeline-card-right > div {
+    padding: 12px 14px;
+    width: 100%;
+    max-width:100%;
+  }
 }
